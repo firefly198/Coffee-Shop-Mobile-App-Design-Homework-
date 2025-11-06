@@ -216,7 +216,7 @@
     <Button
         android:id="@+id/S"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/bg_icon_size_s_l"
         android:text="S"
@@ -231,7 +231,7 @@
     <Button
         android:id="@+id/L"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:background="@drawable/bg_icon_size_s_l"
         android:text="L"
         android:textColor="#242424"
@@ -246,7 +246,7 @@
     <Button
         android:id="@+id/M"
         android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:background="@drawable/bg_icon_m"
         android:text="M"
         android:textColor="#C67C4E"
