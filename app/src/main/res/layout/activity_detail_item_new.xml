@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:padding="6dp"
         />
 
@@ -223,9 +223,9 @@
         android:textColor="#242424"
         android:textSize="14sp"
         app:backgroundTint="@null"
-        app:layout_constraintStart_toStartOf="@+id/coffee2"
         app:layout_constraintEnd_toStartOf="@+id/M"
         app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/coffee2"
         app:layout_constraintTop_toBottomOf="@+id/Size" />
 
     <Button
@@ -259,5 +259,44 @@
         app:layout_constraintEnd_toStartOf="@+id/L"
         app:layout_constraintStart_toEndOf="@+id/S"
         app:layout_constraintTop_toTopOf="@+id/S" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Price"
+        android:textColor="#909090"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/coffee2"
+        app:layout_constraintTop_toBottomOf="@+id/S" />
+
+    <TextView
+        android:id="@+id/PriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 4.53"
+        android:textColor="#C67C4E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/coffee2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/Buy"
+        android:layout_width="217dp"
+        android:layout_height="56dp"
+        android:text="Buy Now"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        android:textStyle="bold"
+        android:backgroundTint="#C67C4E"
+        app:layout_constraintBottom_toBottomOf="@+id/PriceValue"
+        app:layout_constraintEnd_toEndOf="@+id/coffee2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
