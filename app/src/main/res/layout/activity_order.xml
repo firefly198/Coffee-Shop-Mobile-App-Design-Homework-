@@ -213,7 +213,46 @@
         android:layout_marginBottom="2dp"
 
         />
+    
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/delivery_pickup"
+        app:layout_constraintTop_toTopOf="@+id/image_small"
+        app:layout_constraintBottom_toBottomOf="@+id/image_small"
+        android:src="@drawable/add"
+        android:scaleType="centerInside"
+        android:background="@drawable/minus_plus_circle"
+        android:id="@+id/plus"
 
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="1"
+        android:textColor="#2A2A2A"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/plus"
+        app:layout_constraintBottom_toBottomOf="@id/plus"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/quantity"
+        />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@+id/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toStartOf="@+id/quantity"
+        android:src="@drawable/minus"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/minus_plus_circle"
+        android:id="@+id/minus"
+        />
     <View
         android:id="@+id/line_brown"
         android:layout_width="0dp"
@@ -319,12 +358,91 @@
         android:text="$ 2.0"
         android:textColor="#2A2A2A"
         android:textSize="14sp"
-        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@id/new_pr"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/new_pr"
 
         />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash/Wallet"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/wallet"
+            android:layout_marginStart="15dp"
+            android:textColor="#242424"
+            android:id="@+id/cash"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 5.53"
+            app:layout_constraintStart_toStartOf="@id/cash"
+            app:layout_constraintTop_toBottomOf="@+id/cash"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+
+            android:textColor="#C67C4E"
+            android:id="@+id/brown_pr"
+            />
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="Order"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            android:textStyle="bold"
+            android:backgroundTint="#C67C4E"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/brown_pr"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            app:layout_constraintEnd_toEndOf="@id/order_btn"
+            app:layout_constraintTop_toTopOf="@+id/cash"
+            android:id="@+id/arrow_down"
+            app:layout_constraintBottom_toBottomOf="@id/brown_pr"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet"
+            android:id="@+id/wallet"
+            app:layout_constraintStart_toStartOf="@+id/order_btn"
+            app:layout_constraintTop_toTopOf="@id/arrow_down"
+            app:layout_constraintBottom_toBottomOf="@id/arrow_down"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     
 </androidx.constraintlayout.widget.ConstraintLayout>
